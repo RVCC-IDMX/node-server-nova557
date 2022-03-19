@@ -2,9 +2,10 @@
   "name": "node-server-nova557",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,7 @@
   "keywords": [],
   "author": "Cynthia Teeters <cynthia.teeters@raritanval.edu> (https://github.com/cynthiateeters)",
   "license": "MIT",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/RVCC-IDMX/node-server-nova557/issues"
   },
@@ -21,5 +23,6 @@
     "eslint": "^8.11.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4"
-  }
+  },
+  "dependencies": {}
 }
