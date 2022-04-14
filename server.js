@@ -1,23 +1,23 @@
-const http = require("http");
-const fs = require("fs");
+const http = require('http');
+const fs = require('fs');
 
 const PORT = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
-  res.setHeader("Content_type", "text/html");
+  res.setHeader('Content_type', 'text/html');
 
-  let path = "./";
+  let path = './';
   switch (req.url) {
-    case "/":
-      path += "index.html";
+    case '/':
+      path += 'index.html';
       res.statusCode = 200;
       break;
-    case "/about":
-      path += "about.html";
+    case '/about':
+      path += 'about.html';
       res.statusCode = 200;
       break;
     default:
-      path += "404.html";
+      path += '404.html';
       res.statusCode = 404;
       break;
   }
